@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+
+</head>
+<body>
+	<!----hero Section start---->
+
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Portfo<span>lio</span></h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="https://www.linkedin.com/in/tejas-dalvi-3a094a1a4/" target="_blank">About Me</a></li>
+				<!-- <li><a href="#">Services</a></li>
+				<li><a href="#">Skills</a></li> -->
+				<li><a href="https://github.com/Tejas-Dalvi-99" target="_blank">Projects</a></li>
+			</ul>
+			<a href="#" class="btn">Subscribe</a>
+		</nav>
+
+		<div class="content">
+			<h4>Hello, My name is</h4>
+			<h1>Tejas Dalvi</h1>
+			<h3>I'am a Cloud Engineer</h3>
+			<div class="newslatter">
+				
+					<input type="text" name="Name" id="UName" placeholder="Enter Your Name">
+					<input type="submit" value="Go" onclick="Function1()">
+			
+			</div>
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section class="about">
+		<div class="main">
+			<img src="img/background4.jpeg">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<h5><span id="CLD">Cloud Engineer</span></h5>
+				<p>I am an <span id="AWS">AWS Certified Cloud Practitioner</span>. I can work on various cloud services like maintaining cloud hardware, practicing security best practices. I can also provide security in the cloud. I am familiar to various AWS Services such as EC2, Trusted Advisor, Lambda, RDS, DynamoDB, Aurora, S3, EBS, EFS, and many more. I am also familiar with GCP (Google cloud platform) and its services.</p>
+				<button type="button">Let's Talk</button>
+			</div>
+		</div>
+	</section>
+
+	<!-----service section start----------->
+	<div class="service">
+		<div class="title">
+			<h2>Our Services</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------Contact Me------>
+	<div class="contact-me">
+		<p>Let Me Get You A Beautiful Website.</p>
+		<a class="button-two" href="index.html">Go to Top</a>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+
+	<script>
+		function Function1() {
+			var x = document.getElementById("UName").value;
+        	Swal.fire("Hello "+x,"Welcome to my Portfolio", "success"); 
+		}
+	</script>
+
+</body>
+</html>
