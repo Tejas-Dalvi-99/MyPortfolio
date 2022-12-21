@@ -109,7 +109,12 @@
 	<script>
 		function Function1() {
 			var x = document.getElementById("UName").value;
+			if (x=="") {
+				Swal.fire({title: "Ugh Oh, Please Enter you Name First",icon: "warning"});
+			}
+			else{
         	Swal.fire("Hello "+x,"Welcome to my Portfolio", "success"); 
+			}
 		}
 	</script>
 
